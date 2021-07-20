@@ -5,7 +5,7 @@ const DRAG_NOTICE = document.getElementById('js-drag-notice');
 
 var theModel;
 
-const MODEL_PATH = "rim.glb";
+const MODEL_PATH = "rim1.glb";
 
 var activeOption = 'legs';
 var loaded = false;
