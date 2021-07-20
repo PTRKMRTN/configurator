@@ -280,7 +280,7 @@ scene.add(hemiLight);
 var dirLight = new THREE.DirectionalLight(0xffffff, 0.54);
 dirLight.position.set(-8, 12, 8);
 dirLight.castShadow = true;
-dirLight.shadow.mapSize = new THREE.Vector2(1024, 1024);
+dirLight.shadow.mapSize = new THREE.Vector2(2048, 2048);
 // Add directional Light to scene    
 scene.add(dirLight);
 
