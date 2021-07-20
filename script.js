@@ -199,7 +199,7 @@ scene.fog = new THREE.Fog(BACKGROUND_COLOR, 20, 100);
 const canvas = document.querySelector('#c');
 
 // Init the renderer
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true});
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 
 renderer.shadowMap.enabled = true;
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -214,7 +214,7 @@ camera.position.z = cameraFar;
 camera.position.x = 0;
 
 // Initial material
-const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ sheen: 0xf1f1f1, reflectivity: 0.5, clearcoat: 0.5, side: THREE.DoubleSide });
+const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ sheen: 0xf1f1f1, reflectivity: 0.5, clearcoat: 0.5 });
 
 const INITIAL_MAP = [
 { childID: "outer", mtl: INITIAL_MTL },
@@ -280,7 +280,7 @@ scene.add(hemiLight);
 var dirLight = new THREE.DirectionalLight(0xffffff, 0.54);
 dirLight.position.set(-8, 12, 8);
 dirLight.castShadow = true;
-dirLight.shadow.mapSize = new THREE.Vector2(2048, 2048);
+dirLight.shadow.mapSize = new THREE.Vector2(1024, 1024);
 // Add directional Light to scene    
 scene.add(dirLight);
 
