@@ -7,7 +7,7 @@ var theModel;
 
 const MODEL_PATH = "rim1.glb";
 
-var activeOption = 'legs';
+var activeOption = 'outer';
 var loaded = false;
 
 const colors = [
@@ -217,11 +217,11 @@ camera.position.x = 0;
 const INITIAL_MTL = new THREE.MeshPhongMaterial({ color: 0xf1f1f1, shininess: 10 });
 
 const INITIAL_MAP = [
-{ childID: "back", mtl: INITIAL_MTL },
-{ childID: "base", mtl: INITIAL_MTL },
-{ childID: "cushions", mtl: INITIAL_MTL },
-{ childID: "legs", mtl: INITIAL_MTL },
-{ childID: "supports", mtl: INITIAL_MTL }];
+{ childID: "outer", mtl: INITIAL_MTL },
+{ childID: "inner", mtl: INITIAL_MTL },
+{ childID: "bolts", mtl: INITIAL_MTL },
+{ childID: "cap", mtl: INITIAL_MTL },
+{ childID: "valve", mtl: INITIAL_MTL }];
 
 
 // Init the object loader
