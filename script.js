@@ -199,7 +199,7 @@ scene.fog = new THREE.Fog(BACKGROUND_COLOR, 20, 100);
 const canvas = document.querySelector('#c');
 
 // Init the renderer
-const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+const renderer = new THREE.WebGLRenderer({ canvas, antialias: true});
 
 renderer.shadowMap.enabled = true;
 renderer.setPixelRatio(window.devicePixelRatio);
@@ -214,7 +214,7 @@ camera.position.z = cameraFar;
 camera.position.x = 0;
 
 // Initial material
-const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ sheen: 0xf1f1f1, reflectivity: 0.5, clearcoat: 0.5 });
+const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ sheen: 0xf1f1f1, reflectivity: 0.5, clearcoat: 0.5, side: THREE.DoubleSide });
 
 const INITIAL_MAP = [
 { childID: "outer", mtl: INITIAL_MTL },
@@ -272,7 +272,7 @@ function initColor(parent, type, mtl) {
 }
 
 // Add lights
-var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.30);
+var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.61);
 hemiLight.position.set(0, 50, 0);
 // Add hemisphere light to scene   
 scene.add(hemiLight);
