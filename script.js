@@ -272,7 +272,7 @@ function initColor(parent, type, mtl) {
 }
 
 // Add lights
-var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.61);
+var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.30);
 hemiLight.position.set(0, 50, 0);
 // Add hemisphere light to scene   
 scene.add(hemiLight);
