@@ -214,7 +214,7 @@ camera.position.z = cameraFar;
 camera.position.x = 0;
 
 // Initial material
-const INITIAL_MTL = new THREE.MeshPhongMaterial({ color: 0xf1f1f1, shininess: 10 });
+const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ sheen: 0xf1f1f1, reflectivity: 0.5 });
 
 const INITIAL_MAP = [
 { childID: "outer", mtl: INITIAL_MTL },
