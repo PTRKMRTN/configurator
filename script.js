@@ -32,7 +32,7 @@ const colors = [
   shininess: 0 },
 
 {
-  texture: 'img/quilt_.jpg',
+  texture: 'img/carbon_.jpg',
   size: [6, 6, 6],
   shininess: 0 },
 
