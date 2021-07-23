@@ -214,14 +214,15 @@ camera.position.z = cameraFar;
 camera.position.x = 0;
 
 // Initial material
-const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ roughness: 0.5, clearcoat: 1.0, clearcoatRoughness: 0.1, });
+const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ roughness: 0.5, clearcoat: 1.0, clearcoatRoughness: 0.1, side: THREE.DoubleSide, });
 
 const INITIAL_MAP = [
 { childID: "outer", mtl: INITIAL_MTL },
 { childID: "inner", mtl: INITIAL_MTL },
 { childID: "bolts", mtl: INITIAL_MTL },
 { childID: "cap", mtl: INITIAL_MTL },
-{ childID: "valve", mtl: INITIAL_MTL }];
+{ childID: "valve", mtl: INITIAL_MTL },
+{ childID: "lugs", mtl: INITIAL_MTL }];
 
 
 // Init the object loader
