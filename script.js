@@ -214,7 +214,7 @@ camera.position.z = cameraFar;
 camera.position.x = 0;
 
 // Initial material
-const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ sheen: 0xf1f1f1, reflectivity: 0.5, clearcoat: 0.5 });
+const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ roughness: 0.5, clearcoat: 1.0, clearcoatRoughness: 0.1, });
 
 const INITIAL_MAP = [
 { childID: "outer", mtl: INITIAL_MTL },
@@ -272,7 +272,7 @@ function initColor(parent, type, mtl) {
 }
 
 // Add lights
-var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.61);
+var hemiLight = new THREE.HemisphereLight(0xffffff, 0xffffff, 0.6);
 hemiLight.position.set(0, 50, 0);
 // Add hemisphere light to scene   
 scene.add(hemiLight);
@@ -280,7 +280,7 @@ scene.add(hemiLight);
 var dirLight = new THREE.DirectionalLight(0xffffff, 0.54);
 dirLight.position.set(-8, 12, 8);
 dirLight.castShadow = true;
-dirLight.shadow.mapSize = new THREE.Vector2(2048, 2048);
+dirLight.shadow.mapSize = new THREE.Vector2(1024, 1024);
 // Add directional Light to scene    
 scene.add(dirLight);
 
