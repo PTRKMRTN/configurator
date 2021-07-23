@@ -222,7 +222,7 @@ const INITIAL_MAP = [
 { childID: "bolts", mtl: INITIAL_MTL },
 { childID: "cap", mtl: INITIAL_MTL },
 { childID: "valve", mtl: INITIAL_MTL },
-{ childID: "lugs", mtl: INITIAL_MTL }];
+{ childID: "lugs", mtl: INITIAL_MTL },];
 
 
 // Init the object loader
