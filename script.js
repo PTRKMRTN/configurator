@@ -214,7 +214,7 @@ camera.position.z = cameraFar;
 camera.position.x = 0;
 
 // Initial material
-const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ roughness: 0.5, clearcoat: 1.0, clearcoatRoughness: 0.1, side: THREE.DoubleSide, });
+const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ roughness: 0.5, clearcoat: 1.0, clearcoatRoughness: 0.1, side: THREE.DoubleSide, shadowSide: THREE.DoubleSide, });
 
 const INITIAL_MAP = [
 { childID: "outer", mtl: INITIAL_MTL },
