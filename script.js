@@ -204,6 +204,11 @@ const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 renderer.shadowMap.enabled = true;
 renderer.setPixelRatio(window.devicePixelRatio);
 
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = params.exposure;
+
+renderer.outputEncoding = THREE.sRGBEncoding;
+
 var cameraFar = 5;
 
 document.body.appendChild(renderer.domElement);
@@ -214,7 +219,7 @@ camera.position.z = cameraFar;
 camera.position.x = 0;
 
 // Initial material
-const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ roughness: 0.5, clearcoat: 1.0, clearcoatRoughness: 0.1, });
+const INITIAL_MTL = new THREE.MeshPhysicalMaterial({ roughness: 0.5, clearcoat: 1.0, clearcoatRoughness: 0.1, side: THREE.DoubleSide, });
 
 const INITIAL_MAP = [
 { childID: "outer", mtl: INITIAL_MTL },
