@@ -100,45 +100,6 @@ const colors = [
   color: '264B4F' },
 
 {
-  color: '389389' },
-
-{
-  color: '85BEAE' },
-
-{
-  color: 'F2DABA' },
-
-{
-  color: 'F2A97F' },
-
-{
-  color: 'D85F52' },
-
-{
-  color: 'D92E37' },
-
-{
-  color: 'FC9736' },
-
-{
-  color: 'F7BD69' },
-
-{
-  color: 'A4D09C' },
-
-{
-  color: '4C8A67' },
-
-{
-  color: '25608A' },
-
-{
-  color: '75C8C6' },
-
-{
-  color: 'F5E4B7' },
-
-{
   color: '438AAC' }];
 
 
