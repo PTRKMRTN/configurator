@@ -139,51 +139,6 @@ const colors = [
   color: 'F5E4B7' },
 
 {
-  color: 'E69041' },
-
-{
-  color: 'E56013' },
-
-{
-  color: '11101D' },
-
-{
-  color: '630609' },
-
-{
-  color: 'C9240E' },
-
-{
-  color: 'EC4B17' },
-
-{
-  color: '281A1C' },
-
-{
-  color: '4F556F' },
-
-{
-  color: '64739B' },
-
-{
-  color: 'CDBAC7' },
-
-{
-  color: '946F43' },
-
-{
-  color: '66533C' },
-
-{
-  color: '173A2F' },
-
-{
-  color: '153944' },
-
-{
-  color: '27548D' },
-
-{
   color: '438AAC' }];
 
 
