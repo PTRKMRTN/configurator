@@ -204,11 +204,6 @@ const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
 renderer.shadowMap.enabled = true;
 renderer.setPixelRatio(window.devicePixelRatio);
 
-renderer.toneMapping = THREE.ACESFilmicToneMapping;
-renderer.toneMappingExposure = params.exposure;
-
-renderer.outputEncoding = THREE.sRGBEncoding;
-
 var cameraFar = 5;
 
 document.body.appendChild(renderer.domElement);
